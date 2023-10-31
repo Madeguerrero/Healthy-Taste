@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy food</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo-tipo-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Aqui se comienza a desarollar parte el codigo para la parte de la barra de navegacion y la imagen del logo tipo de la pagina -->
+    <header class="header__nav">
+      <a href="./index.html" title="Pagina-principal"
+        ><img
+          src="./img/logo-tipo-oficial.png"
+          alt="logo-pagina"
+          class="logo__header"
+      /></a>
+      <nav class="barra__navegacion__header">
+        <ul class="ul__header__nav">
+          <li class="li__elemento__header">
+            <a href="./nosotros.html" class="texto__ul__header active"
+              >Nosotros</a
+            >
+          </li>
+          <li class="li__elemento__header">
+            <a href="./recetas.html" class="texto__ul__header">Recetas</a>
+          </li>
+          <li class="li__elemento__header">
+            <a href="./contactanos.html" class="texto__ul__header"
+              >Contactanos</a
+            >
+          </li>
+          <li
+            class="li__elemento__header header__elemento__esconder"
+            id="hamburguesa"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </li>
+        </ul>
+
+        <div class="container__cerrar" id="navCerrar">
+          <a href="#" class="overlay__closeBtn btn__link" id="btnCerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="content__cerrar">
+            <a href="./nosotros.html" class="cerrar__content__link">Nosotros</a>
+            <a href="./recetas.html" class="cerrar__content__link">Recetas</a>
+            <a href="./contactanos.html" class="cerrar__content__link"
+              >Contactanos</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo__central__nosotros">Conoce más sobre nosotros</h1>
+      <div class="contenedor__sobre__nosotros">
+        <img
+          src="./img/nutricionista-1.jpg"
+          alt="nutricionista-computadora"
+          class="img__nosotros__nutricionista"
+        />
+        <p>
+          Nuestros nutricionistas te ayudarán a cuidar tu alimentación a través
+          de nuestras recetas y de una atención totalmente personalizada.
+          Atendemos tus necesidades y elaboramos un plan adaptado para que
+          puedas perder peso y mantener los mejores hábitos de una forma
+          sencilla. Especialistas en diversas áreas de la nutrición, trabajamos
+          desde la nutrición deportiva hasta la nutrición clínica, ofreciendo un
+          servicio innovador e individualizado que te motivará en la consecución
+          de tus metas saludables. Contar con un nutricionista especializado que
+          establezca un plan de nutrición acorde a tu ritmo de vida te permitirá
+          llegar a tus objetivos de manera rápida y saludable.
+        </p>
+        <img
+          src="img/planta.png"
+          alt="planta-decoracion"
+          class="imagen__nosotros__planta"
+        />
+      </div>
+      <h2 class="title__mision">Nuestra misión contigo</h2>
+      <section class="cards__mision__container">
+        <div class="container">
+          <input type="radio" name="card" id="item__1" checked />
+          <input type="radio" name="card" id="item__2" />
+          <input type="radio" name="card" id="item__3" />
+
+          <div class="cards">
+            <label class="card" for="item__1" id="selector__1">
+              <img
+                src="./img/nuticionista-mision.jpg"
+                alt=""
+                class="img__cards"
+              />
+              <span
+                >Te enseñaremos a controlar la ansiedad sobre todo en periodo de
+                menstruación, con el objetivo de que no te genere malestar.
+                También trataremos la adherencia como palanca para que no te
+                cueste tener unos hábitos saludables duraderos en el
+                tiempo.</span
+              >
+            </label>
+            <label class="card" for="item__2" id="selector__2">
+              <img src="./img/fruit-granade.jpg" alt="" class="img__cards" />
+              <span
+                >Con nuestras recetas de nutrición clínica, tratamos diferentes
+                trastornos alimentarios. Ofrecemos dietas para celíacos, dieta
+                para intolerancia a la fructosa y lactosa. También tratamos
+                alergias alimentarias.</span
+              >
+            </label>
+            <label class="card" for="item__3" id="selector__3">
+              <img src="./img/nani-bici-mision.jpg" alt="" class="img__cards" />
+              <span
+                >Unir una correcta estrategia alimentaria con un plan de
+                entrenamiento bien estructurado, ayudará a conseguir la
+                composición corporal adecuada para cada actividad
+                deportiva.</span
+              >
+            </label>
+          </div>
+        </div>
+      </section>
+      <div class="text__nosotros">
+        <span
+          >Hoy en día sabemos de la importancia que tiene una buena alimentación
+          en nuestras vidas. Es uno de los pilares donde nos tenemos que apoyar
+          para mejorar nuestra calidad de vida y aumentar la longevidad.</span
+        >
+        <span
+          >Nuestro objetivo es mejorar los hábitos de cada paciente a través de
+          un estilo de vida que sea duradero en el tiempo.</span
+        >
+      </div>
+      <!-- -------- Aqui se crea la etiqueta boton para poder darle la funcionalidad del scroll top --------------------------- -->
+      <button id="btn-scroll" class="btn__scroll__top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </main>
+    <!-- ----------- Aqui se crea la etiqueta del footer el cual contiene diferentes etiquetas de enlaces e iconos de las redes sociales --------------------------- -->
+    <footer class="content__footer">
+      <div class="footer__container">
+        <div class="footer__content__container">
+          <h3 class="website__logo">Healthy Taste</h3>
+          <span class="footer__info">healthyTaste@gmail.com</span>
+        </div>
+        <div class="footer__menus">
+          <div class="footer__content__container">
+            <span class="menu__title">Menu</span>
+            <a href="./nosotros.html" class="menu__item__footer">Nosotros</a>
+            <a href="./recetas.html" class="menu__item__footer">Recetas</a>
+            <a href="./contactanos.html" class="menu__item__footer"
+              >Contactanos</a
+            >
+          </div>
+        </div>
+        <div class="footer__content__container">
+          <span>Sigue nuestras redes</span>
+          <div class="social__container">
+            <a href="https://www.facebook.com/" class="social__link"
+              ><i class="fa-brands fa-facebook icon"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="social__link"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" class="social__link"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__container">
+        <span>Healthy Taste by Madeleine Guerrero 2023 &copy;</span>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

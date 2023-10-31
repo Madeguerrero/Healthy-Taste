@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy food</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo-tipo-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+     <!-- Aqui se comienza a desarollar parte el codigo para la parte de la barra de navegacion y la imagen del logo tipo de la pagina -->
+     <header class="header__nav">
+        <a href="./index.html" title="Pagina-principal"><img src="./img/logo-tipo-oficial.png" alt="logo-pagina" class="logo__header"/></a>
+        <nav class="barra__navegacion__header">
+          <ul class="ul__header__nav">
+            <li class="li__elemento__header"><a href="./nosotros.html" class="texto__ul__header ">Nosotros</a></li>
+            <li class="li__elemento__header"><a href="./recetas.html" class="texto__ul__header active">Recetas</a></li>
+            <li class="li__elemento__header"><a href="./contactanos.html" class="texto__ul__header">Contactanos</a></li>
+            <li class="li__elemento__header  header__elemento__esconder" id="hamburguesa"><i class="fa-solid fa-bars fa-2x"></i></li>
+          </ul>
+  
+          <div class="container__cerrar" id="navCerrar">
+              <a href="#" class="overlay__closeBtn btn__link" id="btnCerrar">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <div class="content__cerrar">
+                <a href="./nosotros.html" class="cerrar__content__link">Nosotros</a>
+                <a href="./recetas.html" class="cerrar__content__link">Recetas</a>
+                <a href="./contactanos.html" class="cerrar__content__link">Contactanos</a>
+              </div>
+            </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container__principal__recetas" id="contenedor__recetas">
+       <h1>Descubre nuestras mejores recetas</h1>
+       <img src="./img/fresa.png" alt="fresa" class="img__fresa__recetas">
+    </div>
+    <div class="container__recetas" id="recipesContainer">
+
+    </div>
+    </main>
+ <!-- -------- Aqui se crea la etiqueta boton para poder darle la funcionalidad del scroll top --------------------------- -->
+ <button id="btn-scroll" class="btn__scroll__top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</main>
+ <!-- ----------- Aqui se crea la etiqueta footer el cual contiene diferentes etiquetas de enlaces e iconos de las redes sociales --------------------------- -->
+ <footer class="content__footer">
+    <div class="footer__container">
+      <div class="footer__content__container">
+        <h3 class="website__logo">Healthy Taste</h3>
+        <span class="footer__info">healthyTaste@gmail.com</span>
+      </div>
+      <div class="footer__menus">
+        <div class="footer__content__container">
+          <span class="menu__title">Menu</span>
+          <a href="./nosotros.html" class="menu__item__footer">Nosotros</a>
+          <a href="./recetas.html" class="menu__item__footer">Recetas</a>
+          <a href="./contactanos.html" class="menu__item__footer">Contactanos</a>
+        </div>
+      </div>
+      <div class="footer__content__container">
+        <span>Sigue nuestras redes</span>
+        <div class="social__container">
+          <a href="https://www.facebook.com/" class="social__link"
+            ><i class="fa-brands fa-facebook icon"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="social__link"
+            ><i class="fa-brands fa-instagram icon"></i
+          ></a>
+          <a href="https://twitter.com/?lang=es" class="social__link"
+            ><i class="fa-brands fa-twitter icon"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright__container">
+      <span>Healthy Taste by Madeleine Guerrero 2023 &copy;</span>
+    </div>
+  </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>

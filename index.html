@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy food</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo-tipo-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Aqui se comienza a desarollar parte el codigo para la parte de la barra de navegacion y la imagen del logo tipo de la pagina -->
+    <header class="header__nav">
+      <a href="./index.html" title="Pagina-principal"
+        ><img
+          src="./img/logo-tipo-oficial.png"
+          alt="logo-pagina"
+          class="logo__header"
+      /></a>
+      <nav class="barra__navegacion__header">
+        <ul class="ul__header__nav">
+          <li class="li__elemento__header">
+            <a href="./nosotros.html" class="texto__ul__header">Nosotros</a>
+          </li>
+          <li class="li__elemento__header">
+            <a href="./recetas.html" class="texto__ul__header">Recetas</a>
+          </li>
+          <li class="li__elemento__header">
+            <a href="./contactanos.html" class="texto__ul__header"
+              >Contactanos</a
+            >
+          </li>
+          <li
+            class="li__elemento__header header__elemento__esconder"
+            id="hamburguesa"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </li>
+        </ul>
+        <!-- ------------------ Aqui se crea el menu hamburguesa despegable ------------------------- -->
+        <div class="container__cerrar" id="navCerrar">
+          <a href="#" class="overlay__closeBtn btn__link" id="btnCerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="content__cerrar">
+            <a href="./nosotros.html" class="cerrar__content__link">Nosotros</a>
+            <a href="./recetas.html" class="cerrar__content__link">Recetas</a>
+            <a href="./contactanos.html" class="cerrar__content__link"
+              >Contactanos</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- En esta parte del codigo se empieza a desarollar la parte del carrusel de la pagina web -->
+      <div class="carrusel__container__div">
+        <div class="grande">
+          <img
+            src="./img/bistec5.jpg"
+            alt="Plato-bistec"
+            class="carrusel__element__imagen"
+          />
+          <img
+            src="./img/egg1.jpg"
+            alt="Plato-egg"
+            class="carrusel__element__imagen"
+          />
+          <img
+            src="./img/toast2.jpg"
+            alt="Plato-toast"
+            class="carrusel__element__imagen"
+          />
+        </div>
+        <div>
+          <ul class="ul__carrusel">
+            <li class="li__punto__carrusel"></li>
+            <li class="li__punto__carrusel"></li>
+            <li class="li__punto__carrusel"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ----------- Aqui se realiza el codigo del contenedor del contenido de la pagina web --------------- -->
+      <h2 class="lema__content__principal">
+        "No tienes que cocinar elegantes o complicadas recetas gourmet, solo
+        cocina buena comida proveniente de ingredientes frescos"
+      </h2>
+      <div class="container__content__principal">
+        <div class="content__principal__elements">
+          <img
+            src="./img/chica-comiendo.jpg"
+            alt="chica-comiendo"
+            class="content__principal__imagen"
+          />
+        </div>
+        <div class="texto__principal">
+          <h2 class="title__principal">Alimentación Saludable</h2>
+          <p>
+            La alimentación saludable comienza con la elección de alimentos
+            saludables. No necesita ser un chef para elaborar comidas nutritivas
+            y saludables para el corazón que su familia adorará. Aprenda en qué
+            debe fijarse en el supermercado, los restaurantes, el lugar de
+            trabajo o en cualquier otra ocasión relacionada con la alimentación.
+          </p>
+        </div>
+      </div>
+      <!-- En este contenido de codigo estamos creando una section que cotendrán las cards, cada una con la etiqueta
+      imagen, titulo y un boton que abrira el modal para enseñar la receta -->
+      <h2 class="titulo__principal__cards">5 recetas faciles de preparar</h2>
+      <section class="container__cards">
+        <div class="cards__div">
+          <img src="./img/bowl-avena.jpg" alt="bowl-avena" />
+          <h3 class="titulo__cards">Avena con mantequilla de mani</h3>
+          <button class="btn__cards" id="btn__card__1">ver receta</button>
+        </div>
+        <div class="cards__div">
+          <img src="./img/sandwich-avocado.jpg" alt="sandwich-avocado" />
+          <h3 class="titulo__cards">Sandwich de aguacate y pepino</h3>
+          <button class="btn__cards" id="btn__card__2">ver receta</button>
+        </div>
+        <div class="cards__div">
+          <img src="./img/arroz-calabacin.jpg" alt="arroz-calabacin" />
+          <h3 class="titulo__cards">Arroz con calabacin al vapor</h3>
+          <button class="btn__cards" id="btn__card__3">ver receta</button>
+        </div>
+        <div class="cards__div">
+          <img src="./img/croissant.jpg" alt="croissant" />
+          <h3 class="titulo__cards">
+            Croissant relleno de salmon y queso crema
+          </h3>
+          <button class="btn__cards" id="btn__card__4">ver receta</button>
+        </div>
+        <div class="cards__div">
+          <img src="./img/burrito.jpg" alt="burrito" />
+          <h3 class="titulo__cards">Burrito de pollo y verduras al vapor</h3>
+          <button class="btn__cards" id="btn__card__5">ver receta</button>
+        </div>
+      </section>
+      <!-- En esta parte del codigo se crea otra seccion que cotendrán las etiquetas con la informacion de cada card en la cual se mostrara mediante un modal-->
+      <section class="modal">
+        <div class="modal__container" id="modal__elements">
+          <button class="modal__close">X</button>
+        </div>
+      </section>
+      <!-- -------- Aqui se crea la etiqueta boton para poder darle la funcionalidad del scroll top --------------------------- -->
+      <button id="btn-scroll" class="btn__scroll__top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </main>
+    <!-- ----------- Aqui se crea la etiqueta del footer es decir el pie de pagina, en el cual contiene diferentes etiquetas de enlaces e iconos de las redes sociales --------------------------- -->
+    <footer class="content__footer">
+      <div class="footer__container">
+        <div class="footer__content__container">
+          <h3 class="website__logo">Healthy Taste</h3>
+          <span class="footer__info">healthyTaste@gmail.com</span>
+        </div>
+        <div class="footer__menus">
+          <div class="footer__content__container">
+            <span class="menu__title">Menu</span>
+            <a href="./nosotros.html" class="menu__item__footer">Nosotros</a>
+            <a href="./recetas.html" class="menu__item__footer">Recetas</a>
+            <a href="./contactanos.html" class="menu__item__footer"
+              >Contactanos</a
+            >
+          </div>
+        </div>
+        <div class="footer__content__container">
+          <span>Sigue nuestras redes</span>
+          <div class="social__container">
+            <a href="https://www.facebook.com/" class="social__link"
+              ><i class="fa-brands fa-facebook icon"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="social__link"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" class="social__link"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__container">
+        <span>Healthy Taste by Madeleine Guerrero 2023 &copy;</span>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
