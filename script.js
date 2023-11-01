@@ -122,38 +122,6 @@ window.onload = eventHandler;
 window.onscroll = scrollFunction;
 
 // **********************************************************************************************************************************
-// ************************************************* FUNCIONES MODAL DE CARDS *******************************************************
-// **********************************************************************************************************************************
-
-let modalBtn = document.querySelectorAll(".btn__cards");
-modalBtn.forEach((botoni) => {
-  botoni.addEventListener("click", showModal);
-});
-
-let modal = document.querySelector(".modal");
-let cerrarModal = document.querySelector(".modal__close");
-cerrarModal.addEventListener("click", closeModal);
-
-let contenedorModal = document.getElementById("modal__elements");
-
-function showModal(e) {
-  e.preventDefault();
-  modal.classList.add("modal--show");
-}
-function closeModal() {
-  modal.classList.remove("modal--show");
-}
-function modalElements() {
-  let elemntModal = document.createElement("div");
-  contenedorModal.appendChild(elemntModal);
-
-  let titleModal = document.createElement("h2");
-  titleModal.innerHTML = "Avena con Mantequilla de maní";
-  elemntModal.appendChild(titleModal);
-}
-
-modalElements();
-// **********************************************************************************************************************************
 // ************************************************* FUNCIONES DEL CARRUSEL *********************************************************
 // **********************************************************************************************************************************
 
@@ -374,12 +342,3 @@ function recetas() {
 
 // -- En esta linea de codigo se hace el llamado de la función recetas ----.
 recetas();
-
-//modal de las cards
-// let card = document.getElementById("btn__card__1");
-// card.addEventListener("click", abreModal);
-
-// function abreModal() {
-//   event.preventDefault();
-//   alert("Esto esta funcionando");
-// }

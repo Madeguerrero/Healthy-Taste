@@ -284,22 +284,37 @@ html {
     border-radius: 30px;
 }
 
-.btn__cards {
-    margin: 1rem;
-    width: 5rem;
-    height: 2rem;
-    background-color: #d2f9ad;
-    border: 1px solid #709053;
-    border-radius: 4px;
+.container__ver__recetas {
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.link__5recetas {
     color: black;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-.btn__cards:hover {
-    background-color: #709053;
-    color: white;
+.link__5recetas:hover {
+    color: #709053;
 }
 
+@media screen and (max-width: 600px) {
+    .container__cards {
+        margin-top: 0;
+    }
+
+    .titulo__principal__cards {
+        font-size: 1.2rem;
+    }
+
+    .container__ver__recetas {
+        margin: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+}
 
 /* Aqui se realiza los estilos del boton de scroll top,los cuales definiran el la posicion, el tamaño, color de fondo, entre entros estilos.*/
 .btn__scroll__top {
@@ -1056,68 +1071,4 @@ y al mapa le damos estilos como la sombra para que tenga un efecto de 3d ----*/
     .container__map {
         display: flex;
     }
-}
-
-
-
-/* estilos de modal */
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #111111bd;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s .9s;
-    --transform: translateY(-100vh);
-    --transition: transform .8s;
-}
-
-/* le agregamos la transiciones que queremos que tarde en ensenarse el modal */
-.modal--show {
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .6s;
-    --transform: translateY(0);
-    --transition: transform .8s .8s;
-}
-
-
-.modal__container {
-    margin: auto;
-    width: 90%;
-    max-width: 600px;
-    max-height: 90%;
-    background-color: wheat;
-    border-radius: 2rem;
-    padding: 3rem 2.5rem;
-    display: grid;
-    gap: 1rem;
-    place-items: center;
-    grid-auto-columns: 100%;
-    transform: var(--transform);
-    transition: var(--transition);
-}
-
-.modal__close {
-    color: white;
-    background-color: #426642;
-    padding: 1rem;
-    border: 1px solid #426642;
-    border-radius: 1rem;
-    /* display: inline-block; */
-    position: absolute;
-    top: 3%;
-    left: 90%;
-    font-weight: 300;
-    transition: background-color .3s;
-}
-
-.modal__close:hover {
-    background-color: white;
-    color: #426642;
 }
