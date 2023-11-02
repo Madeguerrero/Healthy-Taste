@@ -1,3 +1,4 @@
+/* --------- Aqui reiniciamos los estilos por defecto de los navegadores----------------------- */
 body,
 html {
     margin: 0;
@@ -79,7 +80,7 @@ html {
     }
 }
 
-
+/* ----------- Aqui le damos estilos al contenedor hamburguesa, se le da las propiedades de color, tamano de texto, animaciones-------- */
 .container__cerrar {
     height: 100%;
     width: 0;
@@ -114,7 +115,7 @@ html {
     background-color: rgba(59, 77, 41, 0.784);
 }
 
-/* En esta parte del codigo se esta dando estilos al carrusel y a las imagenes que contendrá la pagina central */
+/*  ---------- En esta parte del codigo se esta dando estilos al carrusel y a las imagenes que contendrá la pagina central--------- */
 .carrusel__container__div {
     width: 100%;
     overflow: hidden;
@@ -170,6 +171,7 @@ html {
     color: #c7e78b94;
 }
 
+/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le da una altura automatica a las imagenes y alinear la lista ----------------------*/
 @media screen and (max-width:600px) {
     .carrusel__element__imagen {
         height: auto;
@@ -180,7 +182,8 @@ html {
     }
 }
 
-/* ------------------------- contenido principal */
+/* ------------- Aqui se le da estilos al contenedor principal de la pagina index, el cual se le da las propiedades de color de fondo, alineacion del texto
+tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la iamgen y una sombra para el titulo principal------------- */
 .lema__content__principal {
     text-align: center;
     margin: 0 2rem 5rem;
@@ -217,6 +220,8 @@ html {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.422);
 }
 
+/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le cambie el tamano de letra,la altura y el ancho de la imagen
+ la alieacion del texto ----------------------*/
 @media screen and (max-width:600px) {
     .lema__content__principal {
         font-size: 1rem;
@@ -249,8 +254,6 @@ html {
         text-align: center;
     }
 }
-
-
 
 /* En esta parte del codigo se realiza los estilos del contenedor general que contiene las cards, despues se le da estilos a cada una de las cards con sus imagenes*/
 
@@ -299,6 +302,7 @@ html {
     color: #709053;
 }
 
+/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le da alineacion del texto, tamano de letra y una margen para el contenedor ----------------------*/
 @media screen and (max-width: 600px) {
     .container__cards {
         margin-top: 0;
@@ -316,7 +320,7 @@ html {
 
 }
 
-/* Aqui se realiza los estilos del boton de scroll top,los cuales definiran el la posicion, el tamaño, color de fondo, entre entros estilos.*/
+/* ------- Aqui se realiza los estilos del boton de scroll top,los cuales definiran el la posicion, el tamaño, color de fondo, entre entros estilos.*/
 .btn__scroll__top {
     display: none;
     position: fixed;
@@ -335,17 +339,23 @@ html {
     transition: background-color 1s;
 }
 
+/* ------ tambien se le da un estilo diferente para que cuando el mouse pase por encima del boton cambie en estilo. */
 .btn__scroll__top:hover {
     background-color: #709053;
     color: white;
     font-size: 1.1rem;
 }
 
+/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se aplica estilos para hacer mas pequeno el boton.*/
 @media screen and (max-width: 600px) {
-    .btn__scroll__top {}
+    .btn__scroll__top {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
-/* aqui se esta realizando los estilos del footer*/
+/* ---------- Aqui se esta realizando los estilos del footer, se le da a cada contenedor un ancho, alineacion del contenido, color de fondo de todo el pie de pagina
+a las letras se le da un tamano relatuvo para cada seccion, se le anade tambien una animacion para cuando pase el mouse cambie la opacidad de los iconos*/
 .content__footer {
     bottom: 0;
     left: 0;
@@ -449,7 +459,7 @@ html {
     opacity: 0.7;
 }
 
-/* Estilos del pie de pagina, cuando el ancho de la pantalla sea maximo a 600 los estilos se activaran  */
+/* ------------ Aqui se realiza el responsive para pantallas pequeñas, se le cambia el ancho del contenedor,se alinea el contenido al centro y se le da su respectivo espacio. */
 @media screen and (max-width: 600px) {
     .footer__container {
         padding: 2rem;
@@ -476,6 +486,7 @@ html {
 /*  **************************************************************************************************************************
 ---------------------------------------------- ESTILOS DE LA PAGINA NOSOTROS ---------------------------------------------- 
     ************************************************************************************************************************** */
+/*-------------- Aqui se le da estilos de centrado de texto, un margen y el tamano de la letra ----------- */
 .titulo__central__nosotros {
     text-align: center;
     margin: 2rem;
@@ -516,7 +527,8 @@ html {
     color: #709053;
 }
 
-
+/* ---------- Aqui se realiza el responsive para pantallas pequeñas,se cambia el tamano y se convierte a mayuscula el titulo, a la imagen se le asigna un
+nuev altura y un margen.  */
 @media screen and (max-width: 600px) {
     .titulo__central__nosotros {
         font-size: 1.2rem;
@@ -544,7 +556,8 @@ html {
     }
 }
 
-/* realizamos el cards de mision en 3d */
+/* ------- Aqui realizamos estilos de las cards de mision en 3d,se le da un tamano a cada imagen, se alinea el texto que llevara dentro de la imagen
+le damos flexibilidad al contenedor, alineamos su contenido, le damos animacion y opacidad a cada card, tambien se le da una sombra oara cada card */
 .cards__mision__container {
     max-width: 1000px;
     height: 500px;
@@ -606,6 +619,7 @@ input[type=radio] {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.28);
 }
 
+/*----- Aqui cuando el input 2 tenga la seudoclase checked, las cards tendran un tamano diferente ,una transformacion y un traslado hacia la izquierda y sea un poco mas pequeno. */
 #item__2:checked~.cards #selector__1,
 #item__1:checked~.cards #selector__3,
 #item__3:checked~.cards #selector__2 {
@@ -614,6 +628,7 @@ input[type=radio] {
     z-index: 0;
 }
 
+/*----- Aqui cuando el input 3 tenga la seudoclase checked, las cards tendran un tamano diferente ,una transformacion y un traslado hacia la derecha y sea un poco mas pequeno. */
 #item__3:checked~.cards #selector__1,
 #item__1:checked~.cards #selector__2,
 #item__2:checked~.cards #selector__3 {
@@ -622,6 +637,7 @@ input[type=radio] {
     z-index: 0;
 }
 
+/*----- Aqui cuando el input 1 tenga la seudoclase checked, se le posiciona en la parte de adelante para que este sobrepuesto */
 #item__1:checked~.cards #selector__1,
 #item__2:checked~.cards #selector__2,
 #item__3:checked~.cards #selector__3 {
@@ -635,7 +651,9 @@ input[type=radio] {
     font-size: 1.5rem;
 }
 
-/* ----------- Aqui empiezan los estilos que se le da a cada clase para que se adapte a la pantalla del tamaño maximo de 600px (celulares)------------ */
+/* -----------Aqui se realiza el responsive para pantallas pequeñas, se le da un tamano al texto y se le centra dentro de la cards, al contenedor de las cards
+se le da una posicion relativa, se le asigna una altura del 50% y se le da un borde en la parte de abajo, a cada imagen se le da un ancho y altura y se le quita la seudoclase
+para que se posicionen una debajo de otra. ------------ */
 @media screen and (max-width:600px) {
     .title__mision {
         font-size: 1.2rem;
@@ -712,7 +730,8 @@ input[type=radio] {
 /*  **************************************************************************************************************************
 ---------------------------------------------- ESTILOS DE LA PAGINA RECETAS ---------------------------------------------- 
     ************************************************************************************************************************** */
-
+/*---- Aqui se le da tamano,flexibilidad y un color de fondo al contenedor de recetas,se le da un margen para que queden separadas. a cada imagen de las recetas se le da un ancho y altura
+posicionandolas al final del contenedor y se le da una transformacion en vertical para posicionarla arriba, tambien un tamano para las letras*/
 .container__principal__recetas {
     display: flex;
     justify-content: center;
@@ -767,6 +786,7 @@ input[type=radio] {
     margin: 2rem;
 }
 
+/* --- aqui se le da un tamano y color a la lista de ingredientes------*/
 ol {
     font-size: 1.2rem;
     padding-left: 3rem;
@@ -785,6 +805,8 @@ ol {
     padding: 0 30rem 0 2rem;
 }
 
+/* -----------Aqui se realiza el responsive para pantallas pequeñas,al contenedor se le da una flexibilidad para colocar en columnas los contenedores de recetas
+se le da un tamano a las letras, tambien a las imagenes se les centra y se le un ancho altura. */
 @media screen and (max-width:600px) {
     .container__principal__recetas {
         flex-direction: column;
@@ -835,8 +857,6 @@ ol {
 /*  **************************************************************************************************************************
 ---------------------------------------------- ESTILOS DE LA PAGINA CONTACTANOS ---------------------------------------------- 
     ************************************************************************************************************************** */
-
-
 /* -------- Empezamos los estilos dandole altura y ancho de la imagen central, centramos el texto principal y le damos estilo de tamaño y peso de la fuente------- */
 .container__contacto img {
     height: 100vh;
@@ -905,7 +925,6 @@ input,
 textarea {
     padding: 1rem 1rem;
     border-radius: 1rem;
-    /* margin-bottom: 2rem; */
     background-color: #f7f2dc;
     border: 0.2rem solid #709053;
     color: #0a0a0a;
@@ -943,6 +962,8 @@ textarea::placeholder {
     transition: 0.5s ease;
 }
 
+/* -----------Aqui se realiza el responsive para pantallas pequeñas, se le da una posicion al formulario para poder posicionarlo al centro,
+se le da un tamano para las letras y un margin debajo para que queden separadas los labels,se centra el boton y se cambia el tamano.*/
 @media screen and (max-width:600px) {
     form {
         position: relative;
@@ -980,7 +1001,7 @@ textarea::placeholder {
     }
 }
 
-/* ------------ Aqui se se le da al contenedor secundario de contactos la posición el color de fondo, y al contenido se le posiciona al centro
+/* -----Aqui se se le da al contenedor secundario de contactos la posición el color de fondo, y al contenido se le posiciona al centro
  y se le da un tamaño regular a cada texto -------------- */
 .container__canales {
     display: flex;
@@ -1033,7 +1054,8 @@ y al mapa le damos estilos como la sombra para que tenga un efecto de 3d ----*/
     border-radius: 1rem;
 }
 
-/*------ Aqui se dan los estilos del responsive para que el contenido se pueda adecuar a la pantalla con un maximo de 600 px (celulares) ---------- */
+/*------ Aqui se realiza el responsive para pantallas pequeñas, se le da una altura a la imagen, se le cambia el tamano a los textos,al contenedor se le
+da flexibilidad para poder colocar el contenido en columna. ---------- */
 @media screen and (max-width:600px) {
     .container__contacto img {
         height: 100%;
