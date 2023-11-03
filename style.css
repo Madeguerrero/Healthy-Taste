@@ -13,7 +13,10 @@ html {
     src: url('./fonts/Rokkitt/Rokkitt-Italic-VariableFont_wght.ttf');
 }
 
-/*-------------Aqui se realiza los estilos de la barra de navegacion y del logotipo para que encaje bien en el header de la pagina--------- */
+/*  **************************************************************************************************************************
+---------------------------------------------- ESTILOS DE LA PAGINA INDEX ---------------------------------------------- 
+    ************************************************************************************************************************** */
+/*-------Aqui se realiza los estilos de la barra de navegacion y del logotipo para que encaje bien en el header de la pagina--------- */
 
 .header__nav {
     display: flex;
@@ -62,7 +65,8 @@ html {
     display: none;
 }
 
-/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, el cual enseñara el menu hamburguesa con las opciones de navegacion ----------------------*/
+/* ------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+el cual enseñara el menu hamburguesa con las opciones de navegacion */
 @media screen and (max-width:600px) {
     .logo__header {
         max-width: 20rem;
@@ -77,6 +81,26 @@ html {
 
     .header__elemento__esconder {
         display: block;
+    }
+
+    .ul__header__nav {
+        margin-right: 1rem;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+  Aqui se le da una alineacion al logo, se le da un relleno a los costados del texto del header y se le da un tamano de letra*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .logo__header {
+        transform: translateY(-32%);
+    }
+
+    .barra__navegacion__header {
+        padding-top: 1rem;
+    }
+
+    .texto__ul__header {
+        font-size: 1.4rem;
     }
 }
 
@@ -171,7 +195,8 @@ html {
     color: #c7e78b94;
 }
 
-/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le da una altura automatica a las imagenes y alinear la lista ----------------------*/
+/* ------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se le da una altura automatica a las imagenes y alinear la lista */
 @media screen and (max-width:600px) {
     .carrusel__element__imagen {
         height: auto;
@@ -182,7 +207,26 @@ html {
     }
 }
 
-/* ------------- Aqui se le da estilos al contenedor principal de la pagina index, el cual se le da las propiedades de color de fondo, alineacion del texto
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Aqui se le da la mitad del tamano a las imagenes del carrusel, a la lista se le anade un margen izquierdo para separalos entre si
+ y despues a se le da un tamano y una alineacion en vertical para que se centre en la imagen del carrusel*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .carrusel__element__imagen {
+        height: 50vh;
+    }
+
+    .ul__carrusel {
+        margin-left: 4rem;
+    }
+
+    .li__punto__carrusel {
+        font-size: 5rem;
+        margin: 1rem;
+        transform: translateY(-400%);
+    }
+}
+
+/* ---- Aqui se le da estilos al contenedor principal de la pagina index, el cual se le da las propiedades de color de fondo, alineacion del texto
 tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la iamgen y una sombra para el titulo principal------------- */
 .lema__content__principal {
     text-align: center;
@@ -220,8 +264,8 @@ tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la ia
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.422);
 }
 
-/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le cambie el tamano de letra,la altura y el ancho de la imagen
- la alieacion del texto ----------------------*/
+/* ------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se le cambia el tamano de letra,la altura y el ancho de la imagen, la alieacion de los textos y su respectivo tamano*/
 @media screen and (max-width:600px) {
     .lema__content__principal {
         font-size: 1rem;
@@ -255,7 +299,35 @@ tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la ia
     }
 }
 
-/* En esta parte del codigo se realiza los estilos del contenedor general que contiene las cards, despues se le da estilos a cada una de las cards con sus imagenes*/
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+  Se le un tamano especifico al lema central, una tamano a la imagen para que se quepa en el contenedor padre. a los textos
+  se le da un tamano y un margen .*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .lema__content__principal {
+        transform: translateY(-40%);
+        font-size: 1.4rem;
+    }
+
+    .content__principal__imagen {
+        height: 40vh;
+    }
+
+    .title__principal {
+        font-size: 1.8rem;
+        margin: 1.5rem;
+    }
+
+    .texto__principal {
+        margin: 1.5rem 1.5rem 0;
+    }
+
+    .texto__principal p {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+}
+
+/*------- En esta parte del codigo se realiza los estilos del contenedor general que contiene las cards, despues se le da estilos a cada una de las cards con sus imagenes*/
 
 .titulo__principal__cards {
     text-align: center;
@@ -302,7 +374,8 @@ tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la ia
     color: #709053;
 }
 
-/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se le da alineacion del texto, tamano de letra y una margen para el contenedor ----------------------*/
+/* ------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se le da alineacion del texto, tamano de letra y una margen para el contenedor */
 @media screen and (max-width: 600px) {
     .container__cards {
         margin-top: 0;
@@ -318,6 +391,51 @@ tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la ia
         font-size: 1.2rem;
     }
 
+    .txt__card {
+        margin: 1rem;
+    }
+
+    .link__5recetas {
+        font-weight: 800;
+        background-color: #FFF4C9;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+    }
+
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+  Aqui se da un tamano al titulo para que sea visible en el responsive, una altura a las imagenes del card, al texto un margen
+  y tamano de texto adecuado, al link que lleva la pagina de recetas se le da un color de fondo para diferenciarlo*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .titulo__principal__cards {
+        font-size: 1.6rem;
+    }
+
+    .cards__div {
+        width: 15rem;
+    }
+
+    .container__cards img {
+        height: 15rem;
+    }
+
+    .txt__card {
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .container__ver__recetas {
+        margin: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .link__5recetas {
+        font-weight: 800;
+        background-color: #FFF4C9;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+    }
 }
 
 /* ------- Aqui se realiza los estilos del boton de scroll top,los cuales definiran el la posicion, el tamaño, color de fondo, entre entros estilos.*/
@@ -346,12 +464,23 @@ tamano del texto, altura y ancho de la imagen, con una sombra para reluzca la ia
     font-size: 1.1rem;
 }
 
-/* ------------------- Aqui se realiza el responsive para pantallas pequeñas, se aplica estilos para hacer mas pequeno el boton.*/
+/* ----------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se aplica estilos para hacer mas pequeno el boton.*/
 @media screen and (max-width: 600px) {
     .btn__scroll__top {
         font-size: 1rem;
         padding: 0.5rem;
     }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+  Aqui se le da un tamano mas pequeno al icono y relleno a los lados*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .btn__scroll__top {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
 }
 
 /* ---------- Aqui se esta realizando los estilos del footer, se le da a cada contenedor un ancho, alineacion del contenido, color de fondo de todo el pie de pagina
@@ -459,7 +588,8 @@ a las letras se le da un tamano relatuvo para cada seccion, se le anade tambien 
     opacity: 0.7;
 }
 
-/* ------------ Aqui se realiza el responsive para pantallas pequeñas, se le cambia el ancho del contenedor,se alinea el contenido al centro y se le da su respectivo espacio. */
+/* --------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se le cambia el ancho del contenedor,se alinea el contenido al centro y se le da su respectivo espacio. */
 @media screen and (max-width: 600px) {
     .footer__container {
         padding: 2rem;
@@ -481,6 +611,23 @@ a las letras se le da un tamano relatuvo para cada seccion, se le anade tambien 
         align-items: flex-start;
     }
 
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Se le da un relleno a todos los lados del contenedor padre, al contenedor de menu se le da un relleno izquierdo para separarlo
+ del otro contenedor, lo mismo con el contenedor de las redes sociales.*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .footer__container {
+        padding: 3rem 3rem;
+    }
+
+    .footer__menus {
+        padding-left: 6rem;
+    }
+
+    .footer__content__container {
+        padding-right: 3rem;
+    }
 }
 
 /*  **************************************************************************************************************************
@@ -527,7 +674,8 @@ a las letras se le da un tamano relatuvo para cada seccion, se le anade tambien 
     color: #709053;
 }
 
-/* ---------- Aqui se realiza el responsive para pantallas pequeñas,se cambia el tamano y se convierte a mayuscula el titulo, a la imagen se le asigna un
+/* ------------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------------------
+se cambia el tamano y se convierte a mayuscula el titulo, a la imagen se le asigna un
 nuev altura y un margen.  */
 @media screen and (max-width: 600px) {
     .titulo__central__nosotros {
@@ -553,6 +701,42 @@ nuev altura y un margen.  */
     .imagen__nosotros__planta {
         width: 7rem;
         margin-left: auto;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Se le da un tamano al texto principal, a las imagenes del contenedor nosotros se le da una altura y ancho para que quepan en el contendor padre
+ al texto principal se le da una posicion absoluta para poder colocarlo arriba y poder darle un movimiento hacia la izquierda,
+ tambien se le da un relleno y un margen*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .titulo__central__nosotros {
+        font-size: 2.4rem;
+    }
+
+    .imagen__nosotros__planta {
+        position: absolute;
+        width: 9rem;
+        margin-right: 2rem;
+        left: 75%;
+    }
+
+    .contenedor__sobre__nosotros {
+        height: 40rem;
+    }
+
+    .img__nosotros__nutricionista {
+        height: 50vh;
+        width: 30vh;
+        margin: 2rem;
+    }
+
+    .contenedor__sobre__nosotros p {
+        position: absolute;
+        text-align: -moz-center;
+        left: 30%;
+        margin: 2rem 2rem 0;
+        padding: 1rem 0 0 7rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -651,7 +835,7 @@ input[type=radio] {
     font-size: 1.5rem;
 }
 
-/* -----------Aqui se realiza el responsive para pantallas pequeñas, se le da un tamano al texto y se le centra dentro de la cards, al contenedor de las cards
+/* ------- [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] , se le da un tamano al texto y se le centra dentro de la cards, al contenedor de las cards
 se le da una posicion relativa, se le asigna una altura del 50% y se le da un borde en la parte de abajo, a cada imagen se le da un ancho y altura y se le quita la seudoclase
 para que se posicionen una debajo de otra. ------------ */
 @media screen and (max-width:600px) {
@@ -724,6 +908,34 @@ para que se posicionen una debajo de otra. ------------ */
     #item__2:checked~.cards #selector__2,
     #item__3:checked~.cards #selector__3 {
         transform: none;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Se le da un tamano y un margen al titulo, a las cards se le da un un margen, al texto de cada imagen se le da una posicion a la derecha
+ y se centra, se le da tambien un acho a las imagenes.*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .title__mision {
+        font-size: 2.2rem;
+        margin: 3rem;
+    }
+
+    .card span {
+        right: 1rem;
+        text-align: center;
+    }
+
+    .cards {
+        margin: 6rem;
+    }
+
+    .img__cards {
+        width: 20rem;
+    }
+
+    .text__nosotros {
+        margin: 2rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -805,8 +1017,9 @@ ol {
     padding: 0 30rem 0 2rem;
 }
 
-/* -----------Aqui se realiza el responsive para pantallas pequeñas,al contenedor se le da una flexibilidad para colocar en columnas los contenedores de recetas
-se le da un tamano a las letras, tambien a las imagenes se les centra y se le un ancho altura. */
+/* ------ [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ---------------
+al contenedor se le da una flexibilidad para colocar en columnas los contenedores de recetas se le da un tamano a las letras.
+ tambien a las imagenes se les centra y se le un ancho altura. */
 @media screen and (max-width:600px) {
     .container__principal__recetas {
         flex-direction: column;
@@ -854,6 +1067,51 @@ se le da un tamano a las letras, tambien a las imagenes se les centra y se le un
     }
 }
 
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+  Al titulo principal se le alinea al centro y se le da un tamano, a los titulos de las recetas tambien se le anade un relleno a los costados
+  y un tamano de letra asi tamnbien para el contenido, se le da una altura y ancho de la imagen, un margen y una transformacion en vertical.*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container__principal__recetas h1 {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .titulo__recipe {
+        padding: 0.5rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .recetaBox {
+        height: 42rem;
+    }
+
+    .content__recipe {
+        padding: 0 20rem 0 1.5rem;
+        margin-top: 0;
+        text-align: inherit;
+        font-size: 1.1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .recetaBox h3 {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .img__recipe {
+        height: 29vh;
+        width: 30vh;
+        transform: translateY(-160%);
+        align-self: end;
+        margin: 3rem 2rem 1rem;
+    }
+
+    ol {
+        font-size: 1.1rem;
+    }
+
+}
+
 /*  **************************************************************************************************************************
 ---------------------------------------------- ESTILOS DE LA PAGINA CONTACTANOS ---------------------------------------------- 
     ************************************************************************************************************************** */
@@ -884,6 +1142,51 @@ se le da un tamano a las letras, tambien a las imagenes se les centra y se le un
     left: 35%;
     text-transform: uppercase;
     font-weight: 200;
+}
+
+/*------ [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] -------------
+se le da una altura a la imagen, se le cambia el tamano a los textos,al contenedor se le da flexibilidad para poder colocar el contenido en columna. ---------- */
+@media screen and (max-width:600px) {
+    .container__contacto img {
+        height: 100%;
+
+    }
+
+    .container__contacto h1 {
+        font-size: 2rem;
+        top: 15%;
+        left: 22%;
+    }
+
+    .container__contacto p {
+        font-size: 2rem;
+        top: 15%;
+        left: 14%;
+        padding: 2rem 3.5rem;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Se le da una altura del 50% de su calidad a la imagen central, al texto se le un tamano, una posicion a la izquierda, tambien 
+ un relleno.*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container__contacto img {
+        height: 50vh;
+    }
+
+    .container__contacto p {
+        font-size: 4rem;
+        left: 25%;
+        top: 20%;
+        padding: 2rem;
+    }
+
+    .container__contacto h1 {
+        font-size: 3.5rem;
+        left: 26%;
+        top: 20%;
+    }
+
 }
 
 /* ----------- Aqui empieza los estilos del formulario, lo cual se le asigna diferentes estilos de tamaño, color  el posicionaiento que tendra dentro del contenedor principal----*/
@@ -962,8 +1265,9 @@ textarea::placeholder {
     transition: 0.5s ease;
 }
 
-/* -----------Aqui se realiza el responsive para pantallas pequeñas, se le da una posicion al formulario para poder posicionarlo al centro,
-se le da un tamano para las letras y un margin debajo para que queden separadas los labels,se centra el boton y se cambia el tamano.*/
+/* -------[======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ------------
+se le da una posicion al formulario para poder posicionarlo al centro,se le da un tamano para las letras y un margin debajo para que
+ queden separadas los labels,se centra el boton y se cambia el tamano.*/
 @media screen and (max-width:600px) {
     form {
         position: relative;
@@ -972,7 +1276,7 @@ se le da un tamano para las letras y un margin debajo para que queden separadas 
 
     .formulario__contactanos {
         width: 50%;
-        transform: translateY(-10%);
+        transform: translateY(-15%);
     }
 
     .text__form {
@@ -998,6 +1302,20 @@ se le da un tamano para las letras y un margin debajo para que queden separadas 
 
     .mensaje__error {
         font-size: 1rem;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Al contenedor se le da un posicion en vertical para sobreponerlo en la imagen central y un ancho del 50%, al form se le da una posicion 
+ a la izquierda del 20% para centralo debajo del texto*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .formulario__contactanos {
+        transform: translateY(-25%);
+        width: 50%;
+    }
+
+    form {
+        left: 20%;
     }
 }
 
@@ -1054,27 +1372,10 @@ y al mapa le damos estilos como la sombra para que tenga un efecto de 3d ----*/
     border-radius: 1rem;
 }
 
-/*------ Aqui se realiza el responsive para pantallas pequeñas, se le da una altura a la imagen, se le cambia el tamano a los textos,al contenedor se le
-da flexibilidad para poder colocar el contenido en columna. ---------- */
+/*------ [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] --------------
+  Se le da un flexibilidad de direccion para poder colocarlas en columna, un tamano del 100% a la imagen, un tamano, un margen arriba
+  y al contenedor mapa se le da una flexebilidad para colocarlo.---------- */
 @media screen and (max-width:600px) {
-    .container__contacto img {
-        height: 100%;
-
-    }
-
-    .container__contacto h1 {
-        font-size: 2rem;
-        top: 20%;
-        left: 20%;
-    }
-
-    .container__contacto p {
-        font-size: 2rem;
-        top: 20%;
-        left: 10%;
-        padding: 2rem 3.5rem;
-    }
-
     .container__canales {
         flex-direction: column;
         transform: translateY(-1%);
@@ -1092,5 +1393,22 @@ da flexibilidad para poder colocar el contenido en columna. ---------- */
 
     .container__map {
         display: flex;
+    }
+}
+
+/* ---------------- [ ******** AQUI SE REALIZA EL RESPONSIVE PARA IPADS Y TABLETS ********] ------------------------
+ Se le da una transformacion del -20% en vertical para colocarlo debajo del formulario, se le da un tamano de letra al titulo del mapa,
+ y al mapa se le da un ancho del 100%*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container__canales {
+        transform: translateY(-20%);
+    }
+
+    .encuentranos__title {
+        font-size: 2rem;
+    }
+
+    .container__map iframe {
+        width: 100%;
     }
 }
