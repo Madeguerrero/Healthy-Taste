@@ -12,118 +12,163 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-     <!-- Aqui se comienza a desarollar parte el codigo para la parte de la barra de navegacion y la imagen del logo tipo de la pagina -->
-     <header class="header__nav">
-        <a href="./index.html" title="Pagina-principal"><img src="./img/logo-tipo-oficial.png" alt="logo-pagina" class="logo__header"/></a>
-        <nav class="barra__navegacion__header">
-          <ul class="ul__header__nav">
-            <li class="li__elemento__header"><a href="./nosotros.html" class="texto__ul__header">Nosotros</a></li>
-            <li class="li__elemento__header"><a href="./recetas.html" class="texto__ul__header">Recetas</a></li>
-            <li class="li__elemento__header"><a href="./contactanos.html" class="texto__ul__header active"">Contactanos</a></li>
-            <li class="li__elemento__header  header__elemento__esconder" id="hamburguesa"><i class="fa-solid fa-bars fa-2x"></i></li>
-          </ul>
-         <!-- ------------------ Aqui se crea el menu hamburguesa despegable ------------------------- -->
-          <div class="container__cerrar" id="navCerrar">
-              <a href="#" class="overlay__closeBtn btn__link" id="btnCerrar">
-                <i class="fa-solid fa-xmark"></i>
-              </a>
-              <div class="content__cerrar">
-                <a href="./nosotros.html" class="cerrar__content__link">Nosotros</a>
-                <a href="./recetas.html" class="cerrar__content__link">Recetas</a>
-                <a href="./contactanos.html" class="cerrar__content__link">Contactanos</a>
-              </div>
-            </div>
-        </nav>
-      </header>
-      <!-- ------------------ Aqui se crea el contendor de la iamgen principal y el titulo de entremos en contacto ------------------------- -->
-      <main class="container__elements__contacto">
-        <div class="container__contacto">
-            <img src="./img/orange-contacto.jpg" alt="oranges" >
-            <h1>Entremos en</h1>
-            <p>contacto</p>
+  <body>
+    <!-- Aqui se comienza a desarollar parte el codigo para la parte de la barra de navegacion y la imagen del logo tipo de la pagina -->
+    <header class="header__nav">
+      <a href="./index.html" title="Pagina-principal"
+        ><img
+          src="./img/logo-tipo-oficial.png"
+          alt="logo-pagina"
+          class="logo__header"
+      /></a>
+      <nav class="barra__navegacion__header">
+        <ul class="ul__header__nav">
+          <li class="li__elemento__header">
+            <a href="./nosotros.html" class="texto__ul__header">Nosotros</a>
+          </li>
+          <li class="li__elemento__header">
+            <a href="./recetas.html" class="texto__ul__header">Recetas</a>
+          </li>
+          <li class="li__elemento__header">
+            <a href="./contactanos.html" class="texto__ul__header active"
+              >Contactanos</a
+            >
+          </li>
+          <li
+            class="li__elemento__header header__elemento__esconder"
+            id="hamburguesa"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </li>
+        </ul>
+        <!-- ------------------ Aqui se crea el menu hamburguesa despegable ------------------------- -->
+        <div class="container__cerrar" id="navCerrar">
+          <a href="#" class="overlay__closeBtn btn__link" id="btnCerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="content__cerrar">
+            <a href="./nosotros.html" class="cerrar__content__link">Nosotros</a>
+            <a href="./recetas.html" class="cerrar__content__link">Recetas</a>
+            <a href="./contactanos.html" class="cerrar__content__link"
+              >Contactanos</a
+            >
+          </div>
         </div>
-        <!-- ------------------ Aqui se crea la etiqueta de formulario, el cual contendra cada campo del formulario ------------------------- -->
-        <form action=""  id= "form" class="formulario__contactanos">
-            <p class="text__form">Atención al cliente Healthy Taste</p>
-            <div class="input__group">
-                
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name" placeholder="Nombre completo">
-                <p class="mensaje__error" id="error__name"></p> 
-                
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <p class="mensaje__error" id="error__email"></p> 
+      </nav>
+    </header>
+    <!-- ------------------ Aqui se crea el contendor de la iamgen principal y el titulo de entremos en contacto ------------------------- -->
+    <div class="container__elements__contacto">
+      <div class="container__contacto">
+        <img src="./img/orange-contacto.jpg" alt="oranges" />
+        <h1>Entremos en</h1>
+        <p>contacto</p>
+      </div>
+    </div>
+    <!-- ------------------ Aqui se crea la etiqueta de formulario, el cual contendra cada campo del formulario ------------------------- -->
+    <form action="#" id="form" class="formulario__contactanos">
+      <p class="text__form">Atención al cliente Healthy Taste</p>
+      <div class="input__group">
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nombre completo"
+        />
+        <p class="mensaje__error" id="error__name"></p>
 
-                <label for="phone">Telefono:</label>
-                <input type="number" name="phone" id="phone" placeholder="Telefono">
-                <p class="mensaje__error" id="error__phone"></p> 
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <p class="mensaje__error" id="error__email"></p>
 
-                <label for="message">Mensaje:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje aqui"></textarea>
-               <input type="submit" class="btn__submit" value="Enviar" id="sub">
+        <label for="phone">Telefono:</label>
+        <input type="number" name="phone" id="phone" placeholder="Telefono" />
+        <p class="mensaje__error" id="error__phone"></p>
 
-            </div>
-        </form>
-        <!-- ------------------ Aqui se crea un contenedor de contactos, con su imagen y el texto informativo ------------------------- -->
-        <div class="container__canales">
-        <div class="text__canales__contacto">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto con Healthy Taste. Para nosotros será un placer atenderte y poder ayudarte. Si tienes dudas sobre nutrición, puedes comentárnoslos.</p>
-            <p>A continuación, mostramos nuestros canales de contacto</p>
-            <span>healthyTaste@gmail.com</span><br><br>
-            <span>Telefono: 662 33 83 19 </span>
-        </div>
-        <img src="./img/nutriocionista-contacto.png" alt="imagen-nutricionista" class="img__nutri__contacto">
+        <label for="message">Mensaje:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Escribe tu mensaje aqui"
+        ></textarea>
+        <input type="submit" class="btn__submit" value="Enviar" id="sub" />
+      </div>
+    </form>
+    <!-- ------------------ Aqui se crea un contenedor de contactos, con su imagen y el texto informativo ------------------------- -->
+    <div class="container__canales">
+      <div class="text__canales__contacto">
+        <h2>Contacto</h2>
+        <p>
+          Ponte en contacto con Healthy Taste. Para nosotros será un placer
+          atenderte y poder ayudarte. Si tienes dudas sobre nutrición, puedes
+          comentárnoslos.
+        </p>
+        <p>A continuación, mostramos nuestros canales de contacto</p>
+        <span>healthyTaste@gmail.com</span><br /><br />
+        <span>Telefono: 662 33 83 19 </span>
+      </div>
+      <img
+        src="./img/nutriocionista-contacto.png"
+        alt="imagen-nutricionista"
+        class="img__nutri__contacto"
+      />
     </div>
     <!-- ------------------ Aqui  va el titulo de la direccion ------------------------- -->
     <h2 class="encuentranos__title">Encuentranos en esta dirección</h2>
     <!-- ------------------ Aqui se crea el contenedor del mapa, el cual se coloca la etiqueta que contiene la direccion mostrandolo en mapa ------------------------- -->
-        <div class="container__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7485.444849566601!2d-5.9966786249537245!3d37.38869567829109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c394a7636c7%3A0x2d81bc33cd395f44!2sCEI%3A%20Escuela%20de%20Dise%C3%B1o%20y%20Marketing!5e0!3m2!1ses!2ses!4v1698168903410!5m2!1ses!2ses" 
-            width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
-      </main>
- <!-- -------- Aqui se crea la etiqueta boton para poder darle la funcionalidad del scroll top --------------------------- -->
- <button id="btn-scroll" class="btn__scroll__top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-</main>
- <!-- ----------- Aqui se crea la etiqueta footer el cual contiene diferentes etiquetas de enlaces e iconos de las redes sociales --------------------------- -->
- <footer class="content__footer">
-    <div class="footer__container">
-      <div class="footer__content__container">
-        <h3 class="website__logo">Healthy Taste</h3>
-        <span class="footer__info">healthyTaste@gmail.com</span>
-      </div>
-      <div class="footer__menus">
+    <div class="container__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7485.444849566601!2d-5.9966786249537245!3d37.38869567829109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c394a7636c7%3A0x2d81bc33cd395f44!2sCEI%3A%20Escuela%20de%20Dise%C3%B1o%20y%20Marketing!5e0!3m2!1ses!2ses!4v1698168903410!5m2!1ses!2ses"
+        width="1200"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- -------- Aqui se crea la etiqueta boton para poder darle la funcionalidad del scroll top --------------------------- -->
+    <button id="btn-scroll" class="btn__scroll__top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- ----------- Aqui se crea la etiqueta footer el cual contiene diferentes etiquetas de enlaces e iconos de las redes sociales --------------------------- -->
+    <footer class="content__footer">
+      <div class="footer__container">
         <div class="footer__content__container">
-          <span class="menu__title">Menu</span>
-          <a href="./nosotros.html" class="menu__item__footer">Nosotros</a>
-          <a href="./recetas.html" class="menu__item__footer">Recetas</a>
-          <a href="./contactanos.html" class="menu__item__footer">Contactanos</a>
+          <h3 class="website__logo">Healthy Taste</h3>
+          <span class="footer__info">healthyTaste@gmail.com</span>
+        </div>
+        <div class="footer__menus">
+          <div class="footer__content__container">
+            <span class="menu__title">Menu</span>
+            <a href="./nosotros.html" class="menu__item__footer">Nosotros</a>
+            <a href="./recetas.html" class="menu__item__footer">Recetas</a>
+            <a href="./contactanos.html" class="menu__item__footer"
+              >Contactanos</a
+            >
+          </div>
+        </div>
+        <div class="footer__content__container">
+          <span>Sigue nuestras redes</span>
+          <div class="social__container">
+            <a href="https://www.facebook.com/" class="social__link"
+              ><i class="fa-brands fa-facebook icon"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="social__link"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" class="social__link"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </div>
         </div>
       </div>
-      <div class="footer__content__container">
-        <span>Sigue nuestras redes</span>
-        <div class="social__container">
-          <a href="https://www.facebook.com/" class="social__link"
-            ><i class="fa-brands fa-facebook icon"></i
-          ></a>
-          <a href="https://www.instagram.com/" class="social__link"
-            ><i class="fa-brands fa-instagram icon"></i
-          ></a>
-          <a href="https://twitter.com/?lang=es" class="social__link"
-            ><i class="fa-brands fa-twitter icon"></i
-          ></a>
-        </div>
+      <div class="copyright__container">
+        <span>Healthy Taste by Madeleine Guerrero 2023 &copy;</span>
       </div>
-    </div>
-    <div class="copyright__container">
-      <span>Healthy Taste by Madeleine Guerrero 2023 &copy;</span>
-    </div>
-  </footer>
-
-</body>
-<script src="./script.js"></script>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

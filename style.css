@@ -516,7 +516,6 @@ se le da alineacion del texto, tamano de letra y una margen para el contenedor *
 @media screen and (min-width:1025PX) and (max-width:1279px) {
     .titulo__principal__cards {
         font-size: 2rem;
-        text-align: -moz-center;
     }
 
     .cards__div {
@@ -877,7 +876,7 @@ nuev altura y un margen.  */
 
     .contenedor__sobre__nosotros p {
         position: absolute;
-        text-align: -moz-center;
+        text-align: center;
         left: 30%;
         margin: 2rem 2rem 0;
         padding: 1rem 0 0 7rem;
