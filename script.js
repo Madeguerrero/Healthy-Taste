@@ -297,24 +297,35 @@ function recetas() {
     recetaBox.className = "recetaBox";
     recetasContent.appendChild(recetaBox);
 
+    let recetaTitle = document.createElement("div");
+    recetaTitle.className = "recetaTitle";
+    recetaBox.appendChild(recetaTitle);
     let title = document.createElement("h2");
     title.textContent = recipes[i].title;
     title.className = "titulo__recipe";
-    recetaBox.appendChild(title);
+    recetaTitle.appendChild(title);
+
+    let recetaElements = document.createElement("div");
+    recetaElements.className = "recetaElements";
+    recetaBox.appendChild(recetaElements);
+
+    let recetaText = document.createElement("div");
+    recetaText.className = "recetaText";
+    recetaElements.appendChild(recetaText);
 
     let titleDescript = document.createElement("h3");
     let textoDescript = document.createElement("p");
     titleDescript.innerText = "Descripción";
     textoDescript.textContent = recipes[i].description;
     textoDescript.className = "content__recipe";
-    recetaBox.appendChild(titleDescript);
-    recetaBox.appendChild(textoDescript);
+    recetaText.appendChild(titleDescript);
+    recetaText.appendChild(textoDescript);
 
     // ----- aqui se crea el titulo de ingredientes y se hace un bucle para recorrer el array de objetos de ingredientes para luego crear un texto con el valor de cada objecto del array ingrecientes y colocarlos
     // dentro de la etiqueta lista el cual sera el hijo de una lista ordenada ---------.
     let titleIngre = document.createElement("h3");
     titleIngre.innerText = "Ingredientes";
-    recetaBox.appendChild(titleIngre);
+    recetaText.appendChild(titleIngre);
     let ol = document.createElement("ol");
     let ingre = recipes[i].ingredientes;
     for (let i = 0; i < ingre.length; i++) {
@@ -322,7 +333,7 @@ function recetas() {
       let li = document.createElement("li");
       li.appendChild(listIngre);
       ol.appendChild(li);
-      recetaBox.appendChild(ol);
+      recetaText.appendChild(ol);
     }
 
     let titlePrepa = document.createElement("h3");
@@ -330,13 +341,16 @@ function recetas() {
     titlePrepa.innerText = "Preparación";
     prepararReceta.textContent = recipes[i].preparacion;
     prepararReceta.className = "content__recipe";
-    recetaBox.appendChild(titlePrepa);
-    recetaBox.appendChild(prepararReceta);
+    recetaText.appendChild(titlePrepa);
+    recetaText.appendChild(prepararReceta);
 
+    let recetaImg = document.createElement("div");
+    recetaImg.className = "recetaImg";
+    recetaElements.appendChild(recetaImg);
     let imagenRecipe = document.createElement("img");
     imagenRecipe.src = recipes[i].imagen;
     imagenRecipe.className = "img__recipe";
-    recetaBox.appendChild(imagenRecipe);
+    recetaImg.appendChild(imagenRecipe);
   }
 }
 

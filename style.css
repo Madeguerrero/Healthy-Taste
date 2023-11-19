@@ -1166,12 +1166,11 @@ posicionandolas al final del contenedor y se le da una transformacion en vertica
     margin-bottom: 3rem;
     background-color: #709053;
     border-radius: 1rem;
-    height: 110vh;
 }
 
 .recetaBox h3 {
     color: #FFF4C9;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 0px;
     padding-left: 2rem;
 }
@@ -1179,22 +1178,27 @@ posicionandolas al final del contenedor y se le da una transformacion en vertica
 .titulo__recipe {
     color: black;
     background-color: white;
-    padding-left: 2rem;
+    padding: 0.5rem 2rem;
+}
+
+
+.recetaElements {
+    display: flex;
+    flex-direction: row;
 }
 
 .img__recipe {
-    height: 70vh;
-    width: 30%;
-    align-self: end;
-    transform: translateY(-115%);
+    height: 100vh;
+    max-width: 100vh;
+    text-align: center;
     border-radius: 2rem;
     box-shadow: 4px 3px 6px #00000063;
-    margin: 2rem;
+    margin: 5rem;
 }
 
 /* --- aqui se le da un tamano y color a la lista de ingredientes------*/
 ol {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-left: 3rem;
 }
 
@@ -1207,8 +1211,8 @@ ol {
 }
 
 .content__recipe {
-    font-size: 1.2rem;
-    padding: 0 30rem 0 2rem;
+    font-size: 1.3rem;
+    padding: 0 2rem;
 }
 
 /* ------ [======= AQUI SE REALIZA EL RESPONSIVE PARA PANTALLAS PEQUENAS =======] ---------------
